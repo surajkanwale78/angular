@@ -1,0 +1,38 @@
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="h4 text-danger">Shoping Card</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolor ducimus impedit, sequi cumque eos? Ab repellendus voluptatum eos fugiat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" *ngFor="let product of products">
+                <div class="card">
+                    <div class="card-header">
+                        <img [src]="product.image" alt="" class="img-fluid">
+                    </div>
+                    <div class="card-body shadow">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                name: {{product.name}}
+                            </li>
+                            <li class="list-group-item">
+                                price: {{product.price}}
+                            </li>
+                            <li class="list-group-item">
+                                Qty: {{product.qty}}
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
