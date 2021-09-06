@@ -1,0 +1,19 @@
+<section class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-secondary text-white">
+            <p class="h4">Wish Message</p>
+          </div>
+          <div class="card-body">
+            <p class="h4">{{message}}</p>
+            <button (click)=" updateMessage ('Good Morning')"    class="btn btn-primary m-2 p-2">Good Morning</button>
+            <button (click)=" updateMessage ('Good Afternoon')" class="btn btn-warning m-2 p-2">Good Afternoon</button>
+            <button (click)=" updateMessage ('msg:Good Evening')" class="btn btn-danger m-2 p-2">Good Evening</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,66 @@
+<!---<pre>{{user | json}}</pre>--->
+<section class="mt-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <p class="h4">Register</p>
+                    </div>
+                    <div class="card-body bg-light">
+                        <form (submit)="submitRegister()">
+                            <div class="mb-2">   
+                                <input 
+                                 name="name"
+                                 [(ngModel)]="user.name"
+                                type="text" class="form-control" placeholder="name">
+                            </div>
+                            <div class="mb-2">
+                                <input 
+                                name="email"
+                                [(ngModel)]="user.email"
+                                type="email" class="form-control" placeholder="email">
+                            </div>
+                            <div class="mb-2">
+                                <input
+                                name="password"
+                                 [(ngModel)]="user.password"
+
+                                type="password" class="form-control" placeholder="password">
+                            </div>
+                            <div class="mb-2">
+                                <select 
+                                name="designation"
+                                [(ngModel)]="user.designation"
+                                
+                                class="form-control">
+                                    <option value="">Select Designtaion</option>
+                                    <option value="Softwere Engineer">Softwere engineer</option>
+                                    <option value="Angular Developer">Angular Developer</option>
+                                    <option value="Java Developer">Java Developer</option>
+                                    <option value="Full Stack Developer">Full Stack Developer</option>
+                                </select>
+                            </div>
+                            <div class="mb-2">
+                                <textarea 
+                                name="bio"
+                                [(ngModel)]="user.bio"
+                                rows="4" class="form-control" placeholder="Bio" ></textarea>
+                            </div>
+                            <div class="mb-2">
+                                <input 
+                                name="terms"
+                                [(ngModel)]="user.terms"
+                                
+                                type="checkbox" class="form-check-input">Accepts Terms
+                            </div>
+                            <div class="mb-2">
+                                <input type="submit" class="btn btn-warning btn-sm" value="Register">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
